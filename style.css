@@ -1,0 +1,126 @@
+.boxCon {
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 40%;
+}
+
+.boxCon2 {
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+}
+
+/* 선택자(Selectors) */
+/* 1.전체 선택자(Universal Selector) 
+     (요소 내부의) 모든 요소를 선택*/
+* {
+     font-size: 20px;
+     box-sizing: border-box;
+     text-align: center;
+}
+
+/* 2.태그 선택자(Type Selector) 
+     태그이름으로 요소 선택*/
+div {
+     width: 100px;
+     height: 100px;
+     flex: none;
+}
+
+input {
+     width: 100px;
+     height: 100px;
+}
+
+
+
+/* 3.클래스 선택자(Class Selector)
+     HTML class 속성의 값으로 요소 선택 */
+.box {
+     font-size: 15px;
+     font-weight: bold;
+     color: black;
+     background-color: blue;
+     margin: 15px 15px;
+}
+
+/* 4.아이디 선택자(ID Selector)
+     HTML id 속성의 값으로 요소 선택 */
+#box1 {
+     background-color: blueviolet;
+}
+
+/* 복합 선택자(Combinators) */
+
+/* 1.일치 선택자(Basic Combinator)
+     두 값을 동시에 만족하는 요소를 선택 */
+div .box2 {
+     padding-left: 5px;
+     margin-top: 5px;
+     color: cadetblue;
+     font-size: 15px;
+     font-weight: bold;
+}
+
+/* 2.자식 선택자(Child Combinator) 
+     요소의 자식요소()를 선택*/
+.box>.box3 {
+     padding-left: 5px;
+     margin-top: 5px;
+     color: chartreuse;
+     font-size: 15px;
+     font-weight: bold;
+}
+
+/* 3.후손(하위) 선택자(Descendant Combinator)
+     요소의 후손(하위)요소를 선택 */
+.box .box4 {
+     padding-left: 5px;
+     margin-top: 5px;
+     font-size: 15px;
+     font-weight: bold;
+     color: chocolate;
+}
+
+/* 4.인접 형제 선택자(Adjacent Sibling Combinator)
+     요소의 다음 형제 요소 중 하나만 선택 */
+.box5Selec+div {
+     font-size: 15px;
+     font-weight: bold;
+     color: darkorange;
+     width: 100px;
+     height: 100px;
+     background-color: slategray;
+}
+
+/* 5.일반 형제 선택자(General Sibling Combinator)
+     요소의 다음 형제 요소들을 모두 선택 */
+.box6Selec~.box6 {
+     font-size: 15px;
+     font-weight: bold;
+     background-color: springgreen;
+     color: red;
+}
+
+/* 가상 클래스 선택자(Pseudo-Classes Selectors) */
+
+/* 1.hover
+     요소에 마우스(포인터)가 올라가 있는 동안에만 선택 */
+.hover:hover {
+     font-weight: bold;
+     background-color: saddlebrown;
+}
+
+/* 2.active
+     요소를 마우스로 클릭하는 동안만 선택  */
+
+.active:active {
+     background-color: salmon;
+}
+
+/* 3.focus
+     요소가 포커스 된 동안에만 선택 */
+
+.focus:focus {
+     background-color: teal;
+}
