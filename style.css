@@ -54,7 +54,7 @@ input {
 
 /* 1.일치 선택자(Basic Combinator)
      두 값을 동시에 만족하는 요소를 선택 */
-div .box2 {
+div.box2 {
      padding-left: 5px;
      margin-top: 5px;
      color: cadetblue;
